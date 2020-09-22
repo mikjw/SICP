@@ -1,5 +1,6 @@
 ; Exercise 1.2.  Translate the following expression into prefix form
-; image: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/ch1-Z-G-3.gif
+; (see image at 
+; https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1)
 
 (/ (+ 5
         4
