@@ -13,10 +13,11 @@
 
 ; (if <predicate> <consequent> <alternative>)
 
-; In the special form 'if' above, the <consequent> is always 
-; evaluated first, with the <alternative> evaluated only if 
-; it returns false. This allows a recursive function eventually 
-; to reach its base condition and exit. However, new-if is 
-; defined as a normal procedure and the interpreted will use 
-; applicative-order evaluation, in which the <alternative>
-; clause will be infintely expanded to itself. 
+; In the special form 'if' above, the <predicate> is  
+; evaluated and the <consequent> and <alternative> evaluated only 
+; if it returns true or false, respectively. This means a recursive 
+; function can eventually reach its base condition and exit. However, 
+; new-if is defined as a normal procedure and the interpreter will use 
+; applicative-order evaluation, in which all the arguments are evaluated 
+; first and in which the recursive <alternative> clause will be infinitely 
+; expanded to itself. 
